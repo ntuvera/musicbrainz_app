@@ -1,0 +1,22 @@
+
+<div style="margin: 40PX auto;
+            max-width: 640px;
+            background: rgb(145, 155, 185);
+            box-shadow: 10px 10px 5px rgb(35, 75, 75);
+            border-radius: 20px;
+            ">
+  <div style="padding: 100px;">
+<h1 style="text-align: center;
+           font-family: Arial, Helvetica, sans-serif;">"<%= @artist_name %>" not found. Try again</h1>
+<p style="text-align: center;
+          font-size: 10px;
+          margin-top: -25px;
+          margin-left: 150px;
+          font-family: Arial, Helvetica, sans-serif;" class="sub_line"> 'not' brought do you by: HTTParty & MusicBrainz API </p>
+
+<form style="text-align: center;" action="/result" method="get">
+<input type="text" name="artist_name" placeholder="Enter Artist">
+<input type="submit" value="Search">
+</form>
+  </div>
+</div>

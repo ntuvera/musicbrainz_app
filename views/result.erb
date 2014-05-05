@@ -1,0 +1,48 @@
+<div style="margin: 50px auto;
+            max-width: 80%;
+            background: rgb(145, 155, 185);
+            box-shadow: 10px 10px 5px rgb(35, 75, 75);
+            border-radius: 20px;">
+  <div style="text-align: center;
+            margin-top: 20%;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;">
+    <h2>Top result given for: "<%= @artist_name %>"  </h2>
+
+<table style="margin: 0 auto;
+              background: white;
+              border-radius: 10px">
+  <tr>
+    <td style="
+        width: 200px;
+        border-collapse: collapse;">
+        Name:</td><td><div class="name"> <%= @result_name %></div></td>
+  </tr>
+  <tr style="background: lightgray;">
+<td>Country of Origin:</td><td><div class="country"> <%= @result_country %></div></td>
+  </tr>
+  <tr>
+    <td>Begin Date:</td><td><div class="begin_date"> <%= @result_begin_date || 'undefined' %></div></td>
+      </tr>
+  <tr style="background: lightgray;">
+<td>Associated Word(s):</td><td><div class="disambiguation">
+
+    <% @result_disambiguation.each do |hash| %>
+      <%= hash['name'] %>
+    <% end %>
+
+    </div></td>
+</tr>
+   <tr>
+    <td>Alias:</td><td><div class=""> <%= @result_alias || 'undefined' %></div></td>
+  </tr>
+</table>
+</div>
+<div style="padding: 20px;">
+  <form style="text-align: center;" action="/" method="get">
+    <input type="submit" value="New Search" action="/" method="get">
+  </form>
+</div>
+</div>
+<!-- <div class="tag_lines"> Tag lines: <%= @result_tags %></div> ->
+<!-- <div class="tags"></div> -->

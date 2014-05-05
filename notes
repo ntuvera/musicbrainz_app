@@ -1,0 +1,7 @@
+notes
+
+dp = Musicbrainz.find('daft punk')
+
+dp=[0]      # first index corresponds to search results (varying artists)
+  artist=dp[0]
+

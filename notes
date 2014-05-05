@@ -5,3 +5,5 @@ dp = Musicbrainz.find('daft punk')
 dp=[0]      # first index corresponds to search results (varying artists)
   artist=dp[0]
 
+
+app.rb:14 result nil for some artists test2[0]['life_span']['begin']
